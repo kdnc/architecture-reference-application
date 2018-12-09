@@ -1,0 +1,82 @@
+/*
+Write meaningful variable names
+*/
+
+/* ----- Example 1 ----- */
+// BAD Code
+function div(x, y) {
+  const val = x / y;
+  return val;
+}
+
+// GOOD Code
+function divide(dividend, divisor) {
+  const quotient = dividend / divisor;
+  return quotient;
+}
+
+/* ----- Example 2 ----- */
+// BAD Code
+List<decimal> p = new List<decimal>() { 5.50m, 10.48m, 12.69m };
+decimal t = 0;
+foreach (var i in p)
+{
+    t += i;
+}
+return t;
+
+// GOOD Code
+List<decimal> prices = new List<decimal>() { 5.50m, 10.48m, 12.69m };
+decimal total = 0;
+foreach (var price in prices)
+{
+    total += price;
+}
+return total;
+
+
+
+/*
+Boolean names should sound like true/ false questions
+*/
+
+/* ----- Example 1 ----- */
+// BAD Code
+open
+start
+status
+login
+
+// GOOD Code
+isOpen
+done
+isActive
+loggedIn
+
+/* ----- Example 2 ----- */
+// BAD Code
+if (login) {
+
+}
+
+// GOOD Code
+if (loggedIn) {
+
+}
+
+
+
+/*
+When dealing with states that toggle, consistently use matching pairs
+*/
+// BAD Code
+on/ disable
+quick/ slow
+lock/ open
+slow/ max
+
+// GOOD Code
+on/ off
+fast/ slow
+lock/ unlock
+min/ max

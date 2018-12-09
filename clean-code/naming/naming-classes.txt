@@ -1,0 +1,23 @@
+/*
+Naming classes
+
+Guidelines
+1. Noun
+2. Be specific
+3. Single Responsibility
+4. Avoid generic suffixes
+*/
+
+// BAD Code
+WebsiteBO
+Utility
+Common
+MyFunctions
+JimmysObjects
+*Manager / *Processor / *Info
+
+// GOOD Code
+User
+Account
+QueryBuilder
+ProductRepository

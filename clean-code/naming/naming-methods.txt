@@ -1,0 +1,64 @@
+/*
+Naming Methods
+
+- The method name should say it all.
+*/
+
+/* ----- Example 1 ----- */
+// BAD Code
+Get
+Process
+Pending
+DoIt
+Start
+On_Init, Page_Load, etc.
+
+// GOOD Code
+GetRegisteredUsers
+IsValidSubmission
+ImportDocument
+SendEmail
+
+/* ----- Example 2 ----- */
+// GOOD Code
+storage.removeEntity();
+heroDispatchers.getHeroes();
+toastService.openSnackBar(message, title);
+
+
+
+/*
+- If you find yourself using the words And, Or, If within
+your method name it's a sure sign you are trying to do more than one thing
+*/
+
+/* ----- Example 1 ----- */
+// BAD Code
+saveAndEmail
+loadAndCopy
+calculateAndDisplay
+ProcessOrDeny
+
+
+
+/*
+Watch for Side Effects
+*/
+
+CheckPassword shouldn't log users out.
+ValidateSubmission shouldn't save.
+GetUser shouldn't create their session.
+ChargeCreditCard shouldn't send emails.
+
+
+
+/*
+Avoid abbreviations
+*/
+
+/* ----- Example 1 ----- */
+// BAD Code
+RegUsr
+RegistUser
+RegisUser
+RegisterUsr
